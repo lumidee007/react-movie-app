@@ -11,7 +11,7 @@ export default function App() {
   const [timeoutID, setTimeoutID] = useState();
 
   const fetchData = async (searchString) => {
-    const res = await  axios.get(`http://www.omdbapi.com/?s=${searchString}&apikey=${API_KEY}`)
+    const res = await  axios.get(`https://www.omdbapi.com/?s=${searchString}&apikey=${API_KEY}`)
     setMovieList(res.data.Search)
   }
 

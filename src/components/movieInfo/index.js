@@ -9,7 +9,7 @@ export default function MovieInfo({selectedMovie, setSelectedMovie}) {
     const [movieDetails, setMovieDetails] = useState()
 
     useEffect(() => {
-        axios.get(`http://www.omdbapi.com/?i=${selectedMovie}&apikey=${API_KEY}`).then((res) => setMovieDetails(res.data))
+        axios.get(`https://www.omdbapi.com/?i=${selectedMovie}&apikey=${API_KEY}`).then((res) => setMovieDetails(res.data))
     }, [selectedMovie])
 
             
